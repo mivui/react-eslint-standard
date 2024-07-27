@@ -34,6 +34,7 @@ export function defineConfig(options?: {
         parser: tseslint.parser,
         parserOptions: {
           project: true,
+          tsconfigRootDir: import.meta.dirname,
           ecmaVersion: 'latest',
           sourceType: 'module',
           ecmaFeatures: {
