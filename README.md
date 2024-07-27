@@ -16,10 +16,9 @@ npm i react-eslint-standard -D
 ### eslint.config.js
 
 ```js
-import tseslint from 'typescript-eslint';
-import reactEslint from 'react-eslint-standard';
+import { defineConfig } from 'react-eslint-standard';
 
-export default tseslint.config(...reactEslint);
+export default defineConfig();
 
 ```
 
