@@ -40,7 +40,7 @@ export default {
 ### custom configuration
 
 ```js
-import { defineConfig } from 'typescript-eslint-standard';
+import { defineConfig } from 'react-eslint-standard';
 import tseslint from 'typescript-eslint';
 
 export default defineConfig({
