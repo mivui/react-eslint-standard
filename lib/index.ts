@@ -13,12 +13,16 @@ const reactRules: TSESLint.FlatConfig.Rules = {
   'react/jsx-uses-vars': 'error',
 };
 
+export interface Config extends Omit<TSESLint.FlatConfig.Config, 'linterOptions' | 'name' | 'processor'> {
+  globals?: TSESLint.SharedConfig.GlobalsConfig;
+}
+
 export function defineConfig(options?: {
   extends?: TSESLint.FlatConfig.Config[];
-  config?: TSESLint.FlatConfig.Config;
+  config?: Config;
 }): TSESLint.FlatConfig.ConfigArray {
   const { extends: inherit, config } = options ?? {};
-  const { files, ignores, languageOptions, plugins, rules } = config ?? {};
+  const { files, ignores, languageOptions, plugins, rules, globals, settings } = config ?? {};
   const inherits = inherit ?? [];
   return tseslint.config(
     eslint.configs.recommended,
@@ -32,6 +36,7 @@ export function defineConfig(options?: {
       files: files ?? ['**/*.{j,t}s', '**/*.{j,t}sx'],
       languageOptions: languageOptions ?? {
         parser: tseslint.parser,
+        globals: globals ?? {},
         parserOptions: {
           project: true,
           ecmaVersion: 'latest',
@@ -61,6 +66,7 @@ export function defineConfig(options?: {
         '**/*.ejs',
         '**/*.html',
       ],
+      settings: settings ?? {},
     },
     {
       name: 'vitest-eslint-standard',
