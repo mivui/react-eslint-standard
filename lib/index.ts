@@ -13,7 +13,8 @@ const reactRules: TSESLint.FlatConfig.Rules = {
   'react/jsx-uses-vars': 'error',
 };
 
-export interface Config extends Omit<TSESLint.FlatConfig.Config, 'linterOptions' | 'name' | 'processor'> {
+export interface Config
+  extends Omit<TSESLint.FlatConfig.Config, 'linterOptions' | 'name' | 'processor'> {
   extends?: TSESLint.FlatConfig.Config[];
   globals?: TSESLint.SharedConfig.GlobalsConfig;
 }
