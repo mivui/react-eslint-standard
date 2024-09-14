@@ -23,8 +23,8 @@
     "test": "vitest"
   },
   "dependencies": {
-    "eslint-plugin-react": "^7.35.0",
-    "typescript-eslint-standard": "^9.2.0"
+    "eslint-plugin-react": "^7.36.1",
+    "typescript-eslint-standard": "^9.5.0"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^26.0.1",
@@ -33,12 +33,12 @@
     "@rollup/plugin-replace": "^5.0.7",
     "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^11.1.6",
-    "@types/node": "^22.4.1",
-    "rollup": "^4.21.0",
+    "@types/node": "^22.5.5",
+    "rollup": "^4.21.3",
     "rollup-plugin-dts": "^6.1.1",
-    "tslib": "^2.6.3",
-    "typescript": "^5.5.4",
-    "vitest": "^2.0.5"
+    "tslib": "^2.7.0",
+    "typescript": "^5.6.2",
+    "vitest": "^2.1.1"
   },
   "author": "mivui",
   "license": "MIT",
