@@ -1,16 +1,16 @@
 declare module '@eslint/js' {
   import { type Linter } from 'eslint';
   declare const configs: {
-    all: Linter.FlatConfig;
-    recommended: Linter.FlatConfig;
+    all: Linter.Config;
+    recommended: Linter.Config;
   };
 
-  export default { configs };
+  export { configs };
 }
 
 declare module 'eslint-config-prettier' {
   import { type Linter } from 'eslint';
-  declare const config: Linter.FlatConfig;
+  declare const config: Linter.Config;
 
   export default config;
 }
