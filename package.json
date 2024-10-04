@@ -1,6 +1,6 @@
 {
   "name": "react-eslint-standard",
-  "version": "9.4.0",
+  "version": "9.5.0",
   "description": "quickly start eslint in react",
   "type": "module",
   "main": "./dist/index.js",
@@ -23,8 +23,8 @@
     "test": "vitest"
   },
   "dependencies": {
-    "eslint-plugin-react": "^7.36.1",
-    "typescript-eslint-standard": "^9.10.0"
+    "eslint-plugin-react": "^7.37.1",
+    "typescript-eslint-standard": "^9.12.0"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^28.0.0",
@@ -33,12 +33,12 @@
     "@rollup/plugin-replace": "^6.0.1",
     "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^12.1.0",
-    "@types/node": "^22.6.1",
-    "rollup": "^4.22.4",
+    "@types/node": "^22.7.4",
+    "rollup": "^4.24.0",
     "rollup-plugin-dts": "^6.1.1",
     "tslib": "^2.7.0",
     "typescript": "^5.6.2",
-    "vitest": "^2.1.1"
+    "vitest": "^2.1.2"
   },
   "author": "mivui",
   "license": "MIT",
