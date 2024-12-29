@@ -4,10 +4,3 @@ declare module 'eslint-config-prettier' {
 
   export default config;
 }
-
-declare module 'eslint-plugin-react' {
-  import { type TSESLint } from '@typescript-eslint/utils';
-  declare const plugin: TSESLint.FlatConfig.Plugins;
-
-  export default plugin;
-}
