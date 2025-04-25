@@ -5,6 +5,7 @@ import prettierConfig from 'eslint-config-prettier';
 import prettierRecommended from 'eslint-plugin-prettier/recommended';
 import react from 'eslint-plugin-react';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
+import Globals from 'globals';
 import tseslint from 'typescript-eslint';
 import { tseslintRules } from 'typescript-eslint-standard';
 
@@ -43,7 +44,7 @@ export function defineConfig(config?: Config): TSESLint.FlatConfig.ConfigArray {
       files: files ?? ['**/*.{j,t}s', '**/*.m{j,t}s', '**/*.{j,t}sx'],
       languageOptions: languageOptions ?? {
         parser: tseslint.parser,
-        globals: globals ?? {},
+        globals: { ...Globals.browser, ...globals },
         parserOptions: {
           project: true,
           ecmaVersion: 'latest',
